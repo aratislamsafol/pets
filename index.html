@@ -58,12 +58,230 @@
                     will be distracted by the readable content of a page when looking at its layout. The point of using
                     Lorem Ipsum is that it has a.</p>
                 <button type="button"
-                    class="text-md md:text-xl font-bold text-white bg-[#0E7A81] px-4 py-3 md:px-8 md:py-4 rounded-xl hover:bg-[#33575a] w-fit">View
-                    More</button>
+                    class="text-md md:text-xl font-bold text-white bg-[#0E7A81] px-4 py-3 md:px-8 md:py-4 rounded-xl hover:bg-[#33575a] w-fit cursor-pointer">View More</button>
             </div>
             <!-- img section -->
             <div class="mt-4 md:mt-8 lg:mt-12">
                 <img src="src/images/pet.webp" class="w-full" alt="banner images">
+            </div>
+        </section>
+        <!-- category pets -->
+        <section class="px-2 md:px-8 lg:px-12 text-center">
+            <!-- text section -->
+            <div class="max-w-[636px] mx-auto">
+                <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl">Adopt Your Best Friend</h2>
+                <p class="mt-3 md:mt-6 text-xs md:text-sm lg:text-base"> It is a long established fact that a reader
+                    will be distracted by the readable content of a page when looking at its layout. The point of using
+                    Lorem Ipsum is that it has a.</p>
+            </div>
+            <!-- category section -->
+            <div class="grid grid-cols-2 md:grid-cols-4 my-4 md:my-6 lg:my-8 gap-3 md:gap-4 lg:gap-6" id="categoryItem">
+                <!-- comes from Dynamically -->
+            </div>
+        </section>
+        <!-- Dealing pets  -->
+        <section class="px-2 md:px-8 lg:px-12">
+        <div class="flex justify-between items-center">
+            <h4 class="text-base md:text-xl lg:text-2xl font-black">Best Deal For you</h4>
+            <button type="button" class="text-md md:text-xl font-bold text-white bg-[#0E7A81] px-4 py-3 md:px-8 md:py-4 rounded-xl hover:bg-[#33575a] w-fit cursor-pointer" id="sortByPrice">Sort by Price</button>
+        </div>
+        </section>
+        <!-- pets Show -->
+        <section class="px-2 md:px-8 lg:px-12 my-4 md:my-6 lg:my-8">
+            <!-- loader -->
+            <div class="col-span-10 md:col-span-7 flex justify-center h-[200px] mx-auto" id = "loader" >
+                <span class="loading loading-bars loading-xs"></span>
+                <span class="loading loading-bars loading-sm"></span>
+                <span class="loading loading-bars loading-md"></span>
+                <span class="loading loading-bars loading-lg"></span>
+                <span class="loading loading-bars loading-xl"></span>
+            </div>
+            <!-- divided with left & right side -->
+            <div class="grid grid-col-10 gap-2 md:gap-3">
+                <!-- Main Items Show -->
+                <div class="col-span-10 " id="allPetsContainers">
+                    <div class="grid grid-col-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3">
+                        <!-- card -->
+                        <div class="border border-gray-200 p-2 rounded-xl">
+                            <!-- card header -->
+                            <div>
+                                <img src="src/images/pets items/Rectangle 1.png" class="w-full" alt="">
+                            </div>
+                            <!-- card Body -->
+                            <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
+                            <h3 class="text-lg md:text-xl font-bold">Mister Tartosh</h3> 
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame.png" alt="">
+                                <p class="text-gray-700 text-base">Breed: Golder retriever</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-1.png" alt="">
+                                <p class="text-gray-700 text-base">Birth: 2024</p>
+                            </div>
+
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-2.png" alt="">
+                                <p class="text-gray-700 text-base">Gender: Female</p>
+                            </div>
+
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-3.png" alt="">
+                                <p class="text-gray-700 text-base">Price : 199$</p>
+                            </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="grid grid-cols-3 gap-2 justify-between py-1 mt-2">
+                                <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer">
+                                    <img src="src/images/icons/Frame 1171276315.png" class="w-5 h-5" alt="thumbsUp">
+                                </button>
+
+                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
+                                    Adopt
+                                </button>
+
+                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="border border-gray-200 p-2 rounded-xl">
+                            <!-- card header -->
+                            <div>
+                                <img src="src/images/pets items/Rectangle 1.png" class="w-full" alt="">
+                            </div>
+                            <!-- card Body -->
+                            <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
+                            <h3 class="text-lg md:text-xl font-bold">Mister Tartosh</h3> 
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame.png" alt="">
+                                <p class="text-gray-700 text-base">Breed: Golder retriever</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-1.png" alt="">
+                                <p class="text-gray-700 text-base">Birth: 2024</p>
+                            </div>
+
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-2.png" alt="">
+                                <p class="text-gray-700 text-base">Gender: Female</p>
+                            </div>
+
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-3.png" alt="">
+                                <p class="text-gray-700 text-base">Price : 199$</p>
+                            </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="grid grid-cols-3 gap-2 justify-between py-1 mt-2">
+                                <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer">
+                                    <img src="src/images/icons/Frame 1171276315.png" class="w-5 h-5" alt="thumbsUp">
+                                </button>
+
+                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
+                                    Adopt
+                                </button>
+
+                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="border border-gray-200 p-2 rounded-xl">
+                            <!-- card header -->
+                            <div>
+                                <img src="src/images/pets items/Rectangle 1.png" class="w-full" alt="">
+                            </div>
+                            <!-- card Body -->
+                            <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
+                            <h3 class="text-lg md:text-xl font-bold">Mister Tartosh</h3> 
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame.png" alt="">
+                                <p class="text-gray-700 text-base">Breed: Golder retriever</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-1.png" alt="">
+                                <p class="text-gray-700 text-base">Birth: 2024</p>
+                            </div>
+
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-2.png" alt="">
+                                <p class="text-gray-700 text-base">Gender: Female</p>
+                            </div>
+
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-3.png" alt="">
+                                <p class="text-gray-700 text-base">Price : 199$</p>
+                            </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="grid grid-cols-3 gap-2 justify-between py-1 mt-2">
+                                <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer">
+                                    <img src="src/images/icons/Frame 1171276315.png" class="w-5 h-5" alt="thumbsUp">
+                                </button>
+
+                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
+                                    Adopt
+                                </button>
+
+                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- card -->
+                        <div class="border border-gray-200 p-2 rounded-xl">
+                            <!-- card header -->
+                            <div>
+                                <img src="src/images/pets items/Rectangle 1.png" class="w-full" alt="">
+                            </div>
+                            <!-- card Body -->
+                            <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
+                            <h3 class="text-lg md:text-xl font-bold">Mister Tartosh</h3> 
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame.png" alt="">
+                                <p class="text-gray-700 text-base">Breed: Golder retriever</p>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-1.png" alt="">
+                                <p class="text-gray-700 text-base">Birth: 2024</p>
+                            </div>
+
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-2.png" alt="">
+                                <p class="text-gray-700 text-base">Gender: Female</p>
+                            </div>
+
+                            <div class="flex items-center gap-1">
+                                <img src="src/images/icons/Frame-3.png" alt="">
+                                <p class="text-gray-700 text-base">Price : 199$</p>
+                            </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="grid grid-cols-3 gap-2 justify-between py-1 mt-2">
+                                <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer">
+                                    <img src="src/images/icons/Frame 1171276315.png" class="w-5 h-5" alt="thumbsUp">
+                                </button>
+
+                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
+                                    Adopt
+                                </button>
+
+                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- selected Items Show -->
+                <div class="" id="selectedPets">
+
+                </div>
             </div>
         </section>
     </main>
