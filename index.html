@@ -33,21 +33,21 @@
             <!-- menu Items-->
              <div class="col-span-2 md:col-span-1 hidden md:block" id="menuItem">
                 <ul class="md:flex gap-10 md:justify-center">
-                    <li><a href="index.html" class="block text-sm md:text-base lg:text-base text-stone-600 font-normal hover:text-white hover:bg-teal-600 md:hover:bg-transparent md:hover:text-stone-900 w-full py-2 px-3 md:py-0 md:px-0">Home</a></li>
-                    <li><a href="" class="block text-sm md:text-base lg:text-base text-stone-600 font-normal hover:text-white hover:bg-teal-600 md:hover:bg-transparent md:hover:text-stone-900 w-full py-2 px-3 md:py-0 md:px-0">Shop</a></li>
-                    <li><a href="" class="block text-sm md:text-base lg:text-base text-stone-600 font-normal hover:text-white hover:bg-teal-600 md:hover:bg-transparent md:hover:text-stone-900 w-full py-2 px-3 md:py-0 md:px-0">Contact</a></li>
+                    <li><a href="index.html" class="block font-medium text-base md:text-lg lg:text-xl text-stone-600  hover:text-white hover:bg-teal-600 md:hover:bg-transparent md:hover:text-stone-900 w-full py-2 px-3 md:py-0 md:px-0">Home</a></li>
+                    <li><a href="" class="block font-medium text-base md:text-lg lg:text-xl text-stone-600  hover:text-white hover:bg-teal-600 md:hover:bg-transparent md:hover:text-stone-900 w-full py-2 px-3 md:py-0 md:px-0">Shop</a></li>
+                    <li><a href="" class="block  font-medium text-base md:text-lg lg:text-xl text-stone-600 hover:text-white hover:bg-teal-600 md:hover:bg-transparent md:hover:text-stone-900 w-full py-2 px-3 md:py-0 md:px-0">Contact</a></li>
                 </ul>
              </div>
 
              <button type="button" onclick="users.showModal()" class="hidden md:flex group col-span-2 md:col-span-1 md:border border-gray-300 p-2 md:p-1 md:rounded-full rounded w-full md:w-fit justify-center bg-teal-500 md:bg-transparent md:place-self-end cursor-pointer hover:bg-teal-600 md:hover:bg-transparent md:hover:border-gray-400" id="contactBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:size-5 stroke-white md:stroke-gray-300 md:group-hover:stroke-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:size-8 stroke-white md:stroke-gray-300 md:group-hover:stroke-gray-400">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                   </svg>
             </button>
         </nav>
     </header>
 
-    <main class="pt-5 md:pt-0">
+    <main class="pt-5 md:pt-2 lg:pt-4">
         <!-- banner section -->
         <section class="px-2 md:px-8 lg:px-12 text-center flex flex-col-reverse md:flex-col items-center mb-10 md:mb-15 lg:20">
             <!-- text section -->
@@ -89,7 +89,7 @@
         <!-- pets Show -->
         <section class="px-2 md:px-8 lg:px-12 my-4 md:my-6 lg:my-8">
             <!-- loader -->
-            <div class="col-span-10 md:col-span-7 flex justify-center h-[200px] mx-auto" id = "loader" >
+            <div class="col-span-10  flex justify-center h-[200px] mx-auto" id = "loader" >
                 <span class="loading loading-bars loading-xs"></span>
                 <span class="loading loading-bars loading-sm"></span>
                 <span class="loading loading-bars loading-md"></span>
@@ -97,190 +97,55 @@
                 <span class="loading loading-bars loading-xl"></span>
             </div>
             <!-- divided with left & right side -->
-            <div class="grid grid-col-10 gap-2 md:gap-3">
+            <div class="grid grid-cols-10 gap-2 md:gap-3">
                 <!-- Main Items Show -->
+                 <!-- md:col-span-7 -->
                 <div class="col-span-10 " id="allPetsContainers">
-                    <div class="grid grid-col-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3">
-                        <!-- card -->
-                        <div class="border border-gray-200 p-2 rounded-xl">
-                            <!-- card header -->
-                            <div>
-                                <img src="src/images/pets items/Rectangle 1.png" class="w-full" alt="">
-                            </div>
-                            <!-- card Body -->
-                            <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
-                            <h3 class="text-lg md:text-xl font-bold">Mister Tartosh</h3> 
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame.png" alt="">
-                                <p class="text-gray-700 text-base">Breed: Golder retriever</p>
-                            </div>
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-1.png" alt="">
-                                <p class="text-gray-700 text-base">Birth: 2024</p>
-                            </div>
-
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-2.png" alt="">
-                                <p class="text-gray-700 text-base">Gender: Female</p>
-                            </div>
-
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-3.png" alt="">
-                                <p class="text-gray-700 text-base">Price : 199$</p>
-                            </div>
-                            </div>
-                            <!-- card footer -->
-                            <div class="grid grid-cols-3 gap-2 justify-between py-1 mt-2">
-                                <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer">
-                                    <img src="src/images/icons/Frame 1171276315.png" class="w-5 h-5" alt="thumbsUp">
-                                </button>
-
-                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
-                                    Adopt
-                                </button>
-
-                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
-                                    Details
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- card -->
-                        <div class="border border-gray-200 p-2 rounded-xl">
-                            <!-- card header -->
-                            <div>
-                                <img src="src/images/pets items/Rectangle 1.png" class="w-full" alt="">
-                            </div>
-                            <!-- card Body -->
-                            <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
-                            <h3 class="text-lg md:text-xl font-bold">Mister Tartosh</h3> 
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame.png" alt="">
-                                <p class="text-gray-700 text-base">Breed: Golder retriever</p>
-                            </div>
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-1.png" alt="">
-                                <p class="text-gray-700 text-base">Birth: 2024</p>
-                            </div>
-
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-2.png" alt="">
-                                <p class="text-gray-700 text-base">Gender: Female</p>
-                            </div>
-
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-3.png" alt="">
-                                <p class="text-gray-700 text-base">Price : 199$</p>
-                            </div>
-                            </div>
-                            <!-- card footer -->
-                            <div class="grid grid-cols-3 gap-2 justify-between py-1 mt-2">
-                                <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer">
-                                    <img src="src/images/icons/Frame 1171276315.png" class="w-5 h-5" alt="thumbsUp">
-                                </button>
-
-                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
-                                    Adopt
-                                </button>
-
-                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
-                                    Details
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- card -->
-                        <div class="border border-gray-200 p-2 rounded-xl">
-                            <!-- card header -->
-                            <div>
-                                <img src="src/images/pets items/Rectangle 1.png" class="w-full" alt="">
-                            </div>
-                            <!-- card Body -->
-                            <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
-                            <h3 class="text-lg md:text-xl font-bold">Mister Tartosh</h3> 
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame.png" alt="">
-                                <p class="text-gray-700 text-base">Breed: Golder retriever</p>
-                            </div>
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-1.png" alt="">
-                                <p class="text-gray-700 text-base">Birth: 2024</p>
-                            </div>
-
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-2.png" alt="">
-                                <p class="text-gray-700 text-base">Gender: Female</p>
-                            </div>
-
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-3.png" alt="">
-                                <p class="text-gray-700 text-base">Price : 199$</p>
-                            </div>
-                            </div>
-                            <!-- card footer -->
-                            <div class="grid grid-cols-3 gap-2 justify-between py-1 mt-2">
-                                <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer">
-                                    <img src="src/images/icons/Frame 1171276315.png" class="w-5 h-5" alt="thumbsUp">
-                                </button>
-
-                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
-                                    Adopt
-                                </button>
-
-                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
-                                    Details
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- card -->
-                        <div class="border border-gray-200 p-2 rounded-xl">
-                            <!-- card header -->
-                            <div>
-                                <img src="src/images/pets items/Rectangle 1.png" class="w-full" alt="">
-                            </div>
-                            <!-- card Body -->
-                            <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
-                            <h3 class="text-lg md:text-xl font-bold">Mister Tartosh</h3> 
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame.png" alt="">
-                                <p class="text-gray-700 text-base">Breed: Golder retriever</p>
-                            </div>
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-1.png" alt="">
-                                <p class="text-gray-700 text-base">Birth: 2024</p>
-                            </div>
-
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-2.png" alt="">
-                                <p class="text-gray-700 text-base">Gender: Female</p>
-                            </div>
-
-                            <div class="flex items-center gap-1">
-                                <img src="src/images/icons/Frame-3.png" alt="">
-                                <p class="text-gray-700 text-base">Price : 199$</p>
-                            </div>
-                            </div>
-                            <!-- card footer -->
-                            <div class="grid grid-cols-3 gap-2 justify-between py-1 mt-2">
-                                <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer">
-                                    <img src="src/images/icons/Frame 1171276315.png" class="w-5 h-5" alt="thumbsUp">
-                                </button>
-
-                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
-                                    Adopt
-                                </button>
-
-                                <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
-                                    Details
-                                </button>
-                            </div>
-                        </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3">
+                        <!-- card load from api-->
                     </div>
                 </div>
                 <!-- selected Items Show -->
-                <div class="" id="selectedPets">
+                 <!-- md:col-span-3 -->
+                <div class="col-span-10  p-2 border border-gray-200 rounded-md" id="selectedPets">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-2">
+                        <!-- all selected items -->
+                        <div class="p-1 border border-gray-300 rounded-md ">
+                            <img src="src/images/pets items/Rectangle 1-2.png" class="w-full object-cover" alt="selecteed Images">
+                        </div>
+                        <div class="p-1 border border-gray-300 rounded-md ">
+                            <img src="src/images/pets items/Rectangle 1-2.png" class="w-full object-cover" alt="selecteed Images">
+                        </div>
 
+                        <div class="p-1 border border-gray-300 rounded-md ">
+                            <img src="src/images/pets items/Rectangle 1-2.png" class="w-full object-cover" alt="selecteed Images">
+                        </div>
+
+                        <div class="p-1 border border-gray-300 rounded-md ">
+                            <img src="src/images/pets items/Rectangle 1-2.png" class="w-full object-cover" alt="selecteed Images">
+                        </div>
+
+                        <div class="p-1 border border-gray-300 rounded-md ">
+                            <img src="src/images/pets items/Rectangle 1-2.png" class="w-full object-cover" alt="selecteed Images">
+                        </div>
+
+                        <div class="p-1 border border-gray-300 rounded-md ">
+                            <img src="src/images/pets items/Rectangle 1-2.png" class="w-full object-cover" alt="selecteed Images">
+                        </div>
+
+
+                        <div class="p-1 border border-gray-300 rounded-md ">
+                            <img src="src/images/pets items/Rectangle 1-2.png" class="w-full object-cover" alt="selecteed Images">
+                        </div>
+
+                        <div class="p-1 border border-gray-300 rounded-md ">
+                            <img src="src/images/pets items/Rectangle 1-2.png" class="w-full object-cover" alt="selecteed Images">
+                        </div>
+
+                        <div class="p-1 border border-gray-300 rounded-md ">
+                            <img src="src/images/pets items/Rectangle 1-2.png" class="w-full object-cover" alt="selecteed Images">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
