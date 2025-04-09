@@ -16,7 +16,57 @@
     <title>Pets Site</title>
 </head>
 <body class="regular-font max-w-[1600px] mx-auto">
- 
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <footer class="footer md:grid md:grid-cols-3 bg-black text-base-content px-2 md:px-8 lg:px-12 py-10">
+        <aside>
+            <!-- logo -->
+            <div class="flex items-center gap-1 md:gap-2 mb-6">
+                <img src="./src/images/logo.webp" class="w-5 h-5 md:w-7 md:h-6" alt="logo image">
+                <span class="text-lg md:text-2xl lg:text-3xl font-bold text-white">Peddy</span>
+            </div>
+            <p class="text-gray-300">
+                Location: av. Washington 165, NY CA 54003
+            </p>
+            <p class="text-gray-300">
+                Phone: +31 85 964 47 25
+            </p>
+            <p class="text-gray-300">
+                Email: info@yourdomain.com
+            </p>
+            <p class="text-gray-300">
+                Openings hours: 9.00 AM - 5.00 PM
+            </p>
+            <!-- social items -->
+            <div class="flex gap-3 mt-3">
+                <img src="src/images/social items/Group 2.png" class="w-5 h-5 md:w-8 md:h-8" alt="">
+                <img src="src/images/social items/x-2 1.png" class="w-5 h-5 md:w-8 md:h-8" alt="">
+                <img src="src/images/social items/Group 6.png" class=" w-8 h-5 md:w-8 md:h-8" alt="">
+                <img src="src/images/social items/Group 7.png" class="w-5 h-5 md:w-8 md:h-8" alt="">
+            </div>
+        </aside>
+        <nav class="md:justify-self-center">
+            <h6 class="footer-title text text-gray-300 text footer-font">Useful Links</h6>
+            <a class="link link-hover text-gray-300">Home</a>
+            <a class="link link-hover text-gray-300">About Us</a>
+            <a class="link link-hover text-gray-300">Animals</a>
+            <a class="link link-hover text-gray-300">Foundation</a>
+            <a class="link link-hover text-gray-300">Contact</a>
+        </nav>
+        <!-- newslater -->
+        <div class="md:justify-self-end">
+            <div class="w-full max-w-xs">
+                <h6 class="footer-title text text-gray-300 text footer-font">Drop a Message</h6>
+                <form action="" method="" class="flex flex-col gap-2">
+                    <input type="email" class="outline-none placeholder:text-xs text-sm px-2 rounded text-gray-300 border-none bg-neutral-800 h-8 w-full" placeholder="Enter your email" required>
+                    <input type="submit" class="text-white bg-[#0E7A81] rounded-xl py-2 w-full" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
     <script src="src/js/utilities.js"></script>
     <script src="src/js/main.js"></script>
 </body>
