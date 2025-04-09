@@ -90,7 +90,9 @@ function showAllPets(datum) {
                         Adopt
                     </button>
     
-                    <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800">
+                    <button type="button" class="border-2 border-teal-100 flex justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer text-gray-700 hover:text-gray-800" data-details = '${JSON.stringify(data).replace(/'/g, "&apos")}'
+                    onclick="showDetails(this)"
+                    >
                         Details
                     </button>
                 </div>
@@ -108,6 +110,41 @@ function showAllPets(datum) {
         `;
     }
 
+}
+// showDetails for Pets
+function showDetails(data) {
+    const getStringData = data.getAttribute('data-details');
+    const getObjectData = JSON.parse(getStringData.replace(/&apos;/g,"'"));
+    const modal1 = document.getElementsByClassName('details-content')[0];
+    modal1.innerHTML = '';
+    modal1.innerHTML += `
+        <div>
+            <!-- image section -->
+            <div>
+                <img src="${getObjectData.image}" class="w-full object-cover rounded-md" alt="pets image">
+            </div>
+            <!-- pets details section -->
+                <div class="border-b border-gray-200 pb-2 mt-3">
+                    <h2 class="font-bold footer-font text-lg md:text-xl lg:text-2xl">${getObjectData.pet_name}</h2>
+                    <div class="grid grid-cols-7 mt-3 gap-1">
+                        <p class="col-span-3 text-gray-700 text-base">Breed: ${getObjectData.breed ||'No Data Provided'}</p>
+                        <p class="col-span-3 text-gray-700 text-base">Gender: ${getObjectData.gender || 'No Data Provided'}</p>
+                        <p class="col-span-3 text-gray-700 text-base">Price : ${getObjectData.vaccinated_status || 'vaccinated Later'}</p>
+                        <p class="col-span-3 text-gray-700 text-base">Birth: ${getObjectData.date_of_birth || 'No Data Provided'}</p>
+                        <p class="col-span-3 text-gray-700 text-base">Price : ${getObjectData.price +'$' || 'Call For Price'}</p>
+                    </div>
+                </div>
+
+                <!-- details Imgormation -->
+                <div class="mt-3">
+                    <h4 class="font-bold footer-font text-lg md:text-xl">Details Information</h4>
+                    <p class="text-gray-700 text-base">${getObjectData.pet_details}</p>
+                </div>
+        </div>
+    
+    `
+    // modal open
+    getId('detailsPet').showModal();
 }
 // liked / selected Data
 function selectedData(data) {
