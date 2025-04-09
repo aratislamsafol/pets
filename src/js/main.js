@@ -56,7 +56,7 @@ function showAllPets(datum) {
             `<div class="border border-gray-200 p-2 rounded-xl">
                 <!-- card header -->
                 <div>
-                    <img src="${data.image}" class="w-full" alt="">
+                    <img src="${data.image}" class="w-full rounded" alt="">
                 </div>
                 <!-- card Body -->
                 <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
@@ -82,7 +82,7 @@ function showAllPets(datum) {
                 </div>
                 <!-- card footer -->
                 <div class="grid grid-cols-3 gap-2 justify-between py-1 mt-2">
-                    <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer">
+                    <button type="button" class="border-2 border-teal-100 flex items-center justify-center py-1 rounded-md hover:border-teal-200 cursor-pointer" id="${data.petId}" data-pet='${JSON.stringify(data).replace(/'/g, "&apos;")}' onclick="selectedData(this)">
                         <img src="src/images/icons/Frame 1171276315.png" class="w-5 h-5" alt="thumbsUp">
                     </button>
     
@@ -108,6 +108,24 @@ function showAllPets(datum) {
         `;
     }
 
+}
+// liked / selected Data
+function selectedData(data) {
+    const allPetsContainers = getId('allPetsContainers');
+    const selectedPetContainer = getId('selectedPets');
+    allPetsContainers.classList.add('md:col-span-7');
+    allPetsContainers.children[0].classList.remove('md:grid-cols-3', 'lg:grid-cols-4');
+    allPetsContainers.children[0].classList.add('md:grid-cols-2', 'lg:grid-cols-2', 'xl:grid-cols-3');
+    selectedPetContainer.parentElement.classList.add('md:col-span-3');
+    selectedPetContainer.classList.remove('md:grid-cols-2');
+    selectedPetContainer.classList.add('md:grid-cols-1', 'lg:grid-cols-2');
+    const petDataString = data.getAttribute('data-pet');
+    const petData = JSON.parse(petDataString.replace(/&apos;/g, "'"));
+    selectedPetContainer.innerHTML += `
+        <div class="p-1 border border-gray-300 rounded-md ">
+            <img src="${petData.image}" class="w-full object-cover" alt="selecteed Images">
+        </div>
+    `
 }
 // category Items Show
 function categoryItemsShow(getData) {
