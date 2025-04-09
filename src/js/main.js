@@ -43,7 +43,6 @@ function loadData(api, cb) {
             allPetsContainers.innerHTML = `<div class="text-center">Error occurred while fetching data</div>`;
         });
 }
-
 // show ALL items
 function showAllPets(datum) {
     let cardHTML = '';
@@ -56,7 +55,7 @@ function showAllPets(datum) {
             `<div class="border border-gray-200 p-2 rounded-xl">
                 <!-- card header -->
                 <div>
-                    <img src="${data.image}" class="w-full rounded" alt="">
+                    <img src="${data.image}" class="w-full h-50 rounded" alt="">
                 </div>
                 <!-- card Body -->
                 <div class="border-b border-gray-200 flex flex-col gap-1 pb-3 mt-2">
@@ -186,6 +185,16 @@ function CategoriesDataShow() {
         loadData(`https://openapi.programming-hero.com/api/peddy/category/${target.id}`, showAllPets)
     })
 }
+// sort By Price
+function sortByPrice(datas) {
+    const data = [...datas].sort((a, b) => b.price - a.price);
+    showAllPets(data);
+}
+
+getId('sortByPrice').addEventListener('click', () => {
+    loadData('https://openapi.programming-hero.com/api/peddy/pets', sortByPrice)
+})
+
 CategoriesDataShow();
 // Load Data From Dom
 loadData(`https://openapi.programming-hero.com/api/peddy/pets`, showAllPets);
